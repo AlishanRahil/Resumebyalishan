@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title> Resume Builder</title>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+
+    <!-- Form for Input -->
+    <form id="resumeForm">
+      <h2>Personal Information</h2>
+      <input type="text" id="name" placeholder="Enter Your Name" required>
+      <input type="email" id="email" placeholder="Enter Your Email" required>
+      <input type="tel" id="phone" placeholder="Enter Your Phone Number" required>
+      
+      <h2>Education</h2>
+      <textarea id="education" placeholder="Enter Your Education (Separate each by new line)" rows="3"></textarea>
+
+      <h2>Skills</h2>
+      <textarea id="skills" placeholder="Enter Your Skills (Separate each by new line)" rows="3"></textarea>
+
+      <h2>Work Experience</h2>
+      <textarea id="workExperience" placeholder="Enter Your Work Experience (Separate each by new line)" rows="3"></textarea>
+
+      <button type="button" id="generateResume">Generate Resume</button>
+    </form>
+
+    <!-- Resume Section (Initially Hidden) -->
+    <div class="resume-container" id="resume" style="display: none;">
+      <header>
+        <h1>Name:</h1><p id="display-name" contenteditable="true"></p>
+        <h1>Email</h1><p id="display-contact" contenteditable="true"></p>
+      </header>
+
+      <section>
+        <p></p>
+      </section>
+
+      <section>
+        <h2>Education</h2>
+        <ul id="display-education" contenteditable="true"></ul>
+      </section>
+
+      <section>
+        <h2>Skills</h2>
+        <ul id="display-skills" contenteditable="true"></ul>
+      </section>
+
+      <section>
+        <h2>Work Experience</h2>
+        <ul id="display-work-experience" contenteditable="true"></ul>
+      </section>
+
+      <button id="downloadPdf">Download PDF</button>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+  <script src="first.js"></script>
+
+</body>
+</html>

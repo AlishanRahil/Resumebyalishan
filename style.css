@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  form {
+    margin-bottom: 20px;
+  }
+
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+
+  .resume-container {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  h2 {
+    margin-top: 10px;
+    color: #333;
+  }
+
+  [contenteditable="true"] {
+    border: 1px dashed #ccc;
+    padding: 5px;
+    cursor: text;
+  }
+
+  [contenteditable="true"]:focus {
+    outline: 2px solid #007bff;
+  }
